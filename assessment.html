@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký tư vấn miễn phí | LêVănThông Education</title>
+  <meta name="description" content="Đăng ký tư vấn lộ trình miễn phí cho khóa Toán, Vật lý, Tiếng Anh tại LêVănThông Education, không cần làm bài kiểm tra đầu vào.">
+  <meta name="geo.position" content="10.8031, 106.7292">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  
+</head>
+<body class="bg-white text-gray-800 pb-16 sm:pb-0">
+  <header class="sticky top-0 z-50 bg-[--color-primary] text-white shadow-md">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="/index.html" class="flex items-center gap-2 font-bold text-lg">
+        <span class="bg-[--color-accent] text-[--color-primary] rounded-full w-9 h-9 flex items-center justify-center">L</span>
+        <span class="hidden sm:inline">LêVănThông Education</span>
+        <span class="sm:hidden">LêVănThông Education</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="/index.html" class="hover:text-[--color-accent] transition">Trang chủ</a>
+      <a href="/programs/toan.html" class="hover:text-[--color-accent] transition">Toán</a>
+      <a href="/programs/vatly.html" class="hover:text-[--color-accent] transition">Vật lý</a>
+      <a href="/programs/anhvan.html" class="hover:text-[--color-accent] transition">Anh văn</a>
+      <a href="/about.html" class="hover:text-[--color-accent] transition">Thầy Lê Văn Thông</a>
+      <a href="/schedule.html" class="hover:text-[--color-accent] transition">Lịch khai giảng</a>
+      <a href="/contact.html" class="hover:text-[--color-accent] transition">Liên hệ</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="tel:0919222595" class="hidden sm:flex items-center gap-1 bg-[--color-accent] text-[--color-primary] font-semibold px-3 py-2 rounded-full text-sm">📞 Gọi ngay</a>
+        <a href="https://zalo.me/0919222595" target="_blank" rel="noopener" class="hidden sm:flex items-center gap-1 bg-white text-[--color-primary] font-semibold px-3 py-2 rounded-full text-sm">Zalo</a>
+        <button id="menu-toggle" class="md:hidden text-2xl leading-none" aria-label="Mở menu">&#9776;</button>
+      </div>
+    </div>
+    <nav id="mobile-menu" class="hidden md:hidden bg-[--color-primary] border-t border-white/10 pb-3">
+        <a href="/index.html" class="block px-4 py-2 hover:text-[--color-accent] transition text-white">Trang chủ</a>
+        <a href="/programs/toan.html" class="block px-4 py-2 hover:text-[--color-accent] transition text-white">Toán</a>
+        <a href="/programs/vatly.html" class="block px-4 py-2 hover:text-[--color-accent] transition text-white">Vật lý</a>
+        <a href="/programs/anhvan.html" class="block px-4 py-2 hover:text-[--color-accent] transition text-white">Anh văn</a>
+        <a href="/about.html" class="block px-4 py-2 hover:text-[--color-accent] transition text-white">Thầy Lê Văn Thông</a>
+        <a href="/schedule.html" class="block px-4 py-2 hover:text-[--color-accent] transition text-white">Lịch khai giảng</a>
+        <a href="/contact.html" class="block px-4 py-2 hover:text-[--color-accent] transition text-white">Liên hệ</a>
+        <div class="flex gap-2 px-4 pt-2">
+          <a href="tel:0919222595" class="flex-1 text-center bg-[--color-accent] text-[--color-primary] font-semibold px-3 py-2 rounded-full text-sm">📞 Gọi ngay</a>
+          <a href="https://zalo.me/0919222595" target="_blank" rel="noopener" class="flex-1 text-center bg-white text-[--color-primary] font-semibold px-3 py-2 rounded-full text-sm">Zalo</a>
+        </div>
+    </nav>
+  </header>
+
+  <main class="max-w-2xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-bold text-[--color-primary] text-center">Đăng ký tư vấn miễn phí</h1>
+    <p class="mt-3 text-gray-600 text-center">Không cần làm bài kiểm tra đầu vào — chỉ cần điền thông tin bên dưới, đội ngũ trung tâm sẽ liên hệ tư vấn lộ trình trong 15 phút.</p>
+
+    <form id="assessment-form" class="mt-8 space-y-4 bg-white border rounded-xl p-6">
+      <div>
+        <label class="block text-sm font-medium mb-1" for="student-name">Họ tên học sinh *</label>
+        <input id="student-name" name="studentName" type="text" required class="w-full border rounded-lg px-3 py-2">
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1" for="grade">Lớp *</label>
+        <select id="grade" name="grade" required class="w-full border rounded-lg px-3 py-2">
+          <option value="">-- Chọn lớp --</option>
+          <option value="6">Lớp 6</option><option value="7">Lớp 7</option><option value="8">Lớp 8</option><option value="9">Lớp 9</option><option value="10">Lớp 10</option><option value="11">Lớp 11</option><option value="12">Lớp 12</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1" for="school">Trường</label>
+        <input id="school" name="school" type="text" class="w-full border rounded-lg px-3 py-2">
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1" for="phone">Số điện thoại phụ huynh *</label>
+        <input id="phone" name="parentPhone" type="tel" required pattern="^(0|\+84)[0-9]{9}$" placeholder="0901234567" class="w-full border rounded-lg px-3 py-2">
+      </div>
+      <div>
+        <span class="block text-sm font-medium mb-1">Môn cần học</span>
+        <div class="flex flex-wrap gap-4 text-sm">
+          <label class="flex items-center gap-2"><input type="checkbox" name="subjects" value="Toán"> Toán</label>
+          <label class="flex items-center gap-2"><input type="checkbox" name="subjects" value="Vật lý"> Vật lý</label>
+          <label class="flex items-center gap-2"><input type="checkbox" name="subjects" value="Anh văn"> Anh văn</label>
+        </div>
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1" for="target">Ghi chú thêm (nếu có)</label>
+        <input id="target" name="target" type="text" class="w-full border rounded-lg px-3 py-2">
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1" for="contact-time">Thời gian liên hệ thuận tiện</label>
+        <select id="contact-time" name="contactTime" class="w-full border rounded-lg px-3 py-2">
+          <option value="Sáng">Sáng</option>
+          <option value="Chiều">Chiều</option>
+          <option value="Tối">Tối</option>
+        </select>
+      </div>
+      <button type="submit" class="w-full bg-[--color-accent] text-[--color-primary] font-bold py-3 rounded-full">Đăng ký ngay</button>
+      <p class="text-xs text-gray-400 text-center">Trang được bảo vệ bởi reCAPTCHA. [ Tích hợp Google Sheets / Zalo OA sẽ được cấu hình sau ]</p>
+    </form>
+  </main>
+
+  <footer class="bg-[--color-primary] text-white/90 mt-16">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid gap-8 sm:grid-cols-2 md:grid-cols-4 text-sm">
+      <div>
+        <h3 class="font-bold text-white mb-2">LêVănThông Education</h3>
+        <p>Luyện thi đại học khối A (Toán – Vật lý – Tiếng Anh), đồng thời xây nền tảng vững chắc từ lớp 6 tại Quận Bình Thạnh</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-2">Liên kết</h4>
+        <ul class="space-y-1">
+          <li><a href="/about.html" class="hover:text-[--color-accent]">Thầy Lê Văn Thông</a></li>
+          <li><a href="/method.html" class="hover:text-[--color-accent]">Phương pháp học</a></li>
+          <li><a href="/schedule.html" class="hover:text-[--color-accent]">Lịch khai giảng</a></li>
+          <li><a href="/public-info.html" class="hover:text-[--color-accent]">Thông tin công khai</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-2">Khóa học</h4>
+        <ul class="space-y-1">
+          <li><a href="/programs/toan.html" class="hover:text-[--color-accent]">Toán (Lớp 6–12)</a></li>
+          <li><a href="/programs/vatly.html" class="hover:text-[--color-accent]">Vật lý (Lớp 6–12)</a></li>
+          <li><a href="/programs/anhvan.html" class="hover:text-[--color-accent]">Anh văn (Lớp 6–12)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-2">Liên hệ</h4>
+        <p>232/5 Bình Lợi, Phường Bình Lợi Trung, TP.HCM</p>
+        <p>Điện thoại: <a href="tel:0919222595" class="hover:text-[--color-accent]">0919 222 595</a></p>
+        <p><a href="https://zalo.me/0919222595" target="_blank" rel="noopener" class="hover:text-[--color-accent]">Nhắn Zalo</a></p>
+      </div>
+    </div>
+    <div class="border-t border-white/10 text-center text-xs py-4">&copy; 2026 LêVănThông Education. All rights reserved.</div>
+  </footer>
+
+  <div class="sticky-actions sm:hidden flex">
+    <a href="tel:0919222595" class="flex-1 text-center bg-[--color-accent] text-[--color-primary] font-bold py-3">📞 Gọi ngay</a>
+    <a href="https://zalo.me/0919222595" target="_blank" rel="noopener" class="flex-1 text-center bg-[--color-primary] text-white font-bold py-3 border-l border-white/20">Nhắn Zalo</a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

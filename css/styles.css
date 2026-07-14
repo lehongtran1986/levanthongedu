@@ -1,0 +1,35 @@
+/* Base styles on top of Tailwind CDN utilities */
+
+:root {
+  --color-primary: #003D7A;
+  --color-accent: #FF9900;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Mobile sticky action bar (call + Zalo) */
+.sticky-actions {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+}
+
+/* Hide mobile nav by default, toggled via JS */
+#mobile-menu.hidden {
+  display: none;
+}
+
+/* Simple fade-in for accordion panels */
+.accordion-panel {
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+
+/* Smooth scroll for in-page anchors */
+html {
+  scroll-behavior: smooth;
+}
