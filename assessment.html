@@ -52,7 +52,7 @@
     <h1 class="text-3xl font-bold text-[--color-primary] text-center">Đăng ký tư vấn miễn phí</h1>
     <p class="mt-3 text-gray-600 text-center">Không cần làm bài kiểm tra đầu vào — chỉ cần điền thông tin bên dưới, đội ngũ trung tâm sẽ liên hệ tư vấn lộ trình trong 15 phút.</p>
 
-    <form id="assessment-form" class="mt-8 space-y-4 bg-white border rounded-xl p-6">
+    <form id="assessment-form" data-endpoint="https://script.google.com/macros/s/AKfycbx1i4SOqN-4OToiwDra2rS-LL9oSJOc3bPgwassONVTdQibTDSWfyY-YrKH993xJiYC_Q/exec" class="mt-8 space-y-4 bg-white border rounded-xl p-6">
       <div>
         <label class="block text-sm font-medium mb-1" for="student-name">Họ tên học sinh *</label>
         <input id="student-name" name="studentName" type="text" required class="w-full border rounded-lg px-3 py-2">
@@ -93,9 +93,16 @@
           <option value="Tối">Tối</option>
         </select>
       </div>
-      <button type="submit" class="w-full bg-[--color-accent] text-[--color-primary] font-bold py-3 rounded-full">Đăng ký ngay</button>
-      <p class="text-xs text-gray-400 text-center">Trang được bảo vệ bởi reCAPTCHA. [ Tích hợp Google Sheets / Zalo OA sẽ được cấu hình sau ]</p>
+      <button id="assessment-submit-btn" type="submit" class="w-full bg-[--color-accent] text-[--color-primary] font-bold py-3 rounded-full">Đăng ký ngay</button>
+      <p id="assessment-form-error" class="text-sm text-red-600 text-center hidden">Có lỗi xảy ra, vui lòng thử lại hoặc gọi trực tiếp 0919 222 595.</p>
+      <p class="text-xs text-gray-400 text-center">Thông tin của bạn chỉ dùng để liên hệ tư vấn, không chia sẻ cho bên thứ ba.</p>
     </form>
+
+    <div id="assessment-success" class="mt-8 bg-white border rounded-xl p-6 text-center hidden">
+      <p class="text-xl font-bold text-[--color-primary]">Cảm ơn bạn đã đăng ký!</p>
+      <p class="mt-2 text-gray-600">Đội ngũ trung tâm sẽ liên hệ tư vấn trong 15 phút. Bạn cũng có thể chủ động nhắn Zalo để được hỗ trợ nhanh hơn.</p>
+      <a href="https://zalo.me/0919222595" target="_blank" rel="noopener" class="inline-block mt-4 bg-[--color-primary] text-white font-semibold px-6 py-3 rounded-full">Nhắn tin Zalo ngay</a>
+    </div>
   </main>
 
   <footer class="bg-[--color-primary] text-white/90 mt-16">
