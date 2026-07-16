@@ -16,6 +16,13 @@ PHONE_TEL = "tel:0919222595"
 ZALO_LINK = "https://zalo.me/0919222595"
 ADDRESS = "232/5 Bình Lợi, Phường Bình Lợi Trung, TP.HCM"
 FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbx1i4SOqN-4OToiwDra2rS-LL9oSJOc3bPgwassONVTdQibTDSWfyY-YrKH993xJiYC_Q/exec"
+FACEBOOK_PIXEL_ID = "1699836964558657"
+FACEBOOK_PIXEL_CODE = f"""<!-- Facebook Pixel Code -->
+<script>!function(f,b,e,v,n,t,s){{if(f.fbq)return;n=f.fbq=function(){{n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)}};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '{FACEBOOK_PIXEL_ID}');
+fbq('track', 'PageView');</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={FACEBOOK_PIXEL_ID}&ev=PageView&noscript=1"/></noscript>
+<!-- End Facebook Pixel Code -->"""
 MAP_LAT = "10.8348866"
 MAP_LNG = "106.7046957"
 MAP_EMBED_SRC = f"https://www.google.com/maps?q={MAP_LAT},{MAP_LNG}&z=16&output=embed"
@@ -126,6 +133,7 @@ def page(title, description, current, body, asset_prefix="", extra_head=""):
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="{css_path}">
   {extra_head}
+  {FACEBOOK_PIXEL_CODE}
 </head>
 <body class="bg-white text-gray-800 pb-16 sm:pb-0">
 {header(current)}
