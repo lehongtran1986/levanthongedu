@@ -10,7 +10,7 @@ import os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 CENTER_NAME = "Lê Văn Thông Education"
-TAGLINE = "Luyện thi đại học đánh giá năng lực (Toán – Vật lý – Tiếng Anh), đồng thời xây nền tảng vững chắc từ lớp 6 tại Quận Bình Thạnh"
+TAGLINE = "Luyện thi đại học đánh giá năng lực (Toán – Vật lý – Tiếng Anh), đồng thời xây nền tảng vững chắc từ lớp 6 - 12 tại Quận Bình Thạnh"
 PHONE_DISPLAY = "0919 222 595"
 PHONE_TEL = "tel:0919222595"
 ZALO_LINK = "https://zalo.me/0919222595"
@@ -155,7 +155,7 @@ def write(path, content):
 index_body = f"""  <main>
     <section class="bg-gradient-to-b from-[--color-primary] to-[#002a57] text-white">
       <div class="max-w-6xl mx-auto px-4 py-14 sm:py-20 text-center">
-        <h1 class="text-3xl sm:text-5xl font-bold leading-tight">Vững vàng luyện thi đại học đánh giá năng lực<br class="hidden sm:block"> cùng nền tảng Toán – Lý – Anh và IELTS từ lớp 6</h1>
+        <h1 class="text-3xl sm:text-5xl font-bold leading-tight">Vững vàng luyện thi đại học đánh giá năng lực<br class="hidden sm:block"> cùng nền tảng Toán – Lý – Anh và IELTS từ lớp 6 - 12</h1>
         <p class="mt-2 text-[--color-accent] font-semibold">Học cùng đội ngũ giảng dạy dẫn dắt bởi Thầy Lê Văn Thông</p>
         <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
           <a href="/assessment.html" class="bg-[--color-accent] text-[--color-primary] font-bold px-6 py-3 rounded-full">Tư vấn miễn phí</a>
