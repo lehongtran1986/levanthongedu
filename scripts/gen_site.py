@@ -329,7 +329,7 @@ SUBJECTS = {
         "instructor": "Thầy Lê Hồng Trân",
         "eligibility_q": "Học sinh trình độ nào có thể đăng ký?",
         "eligibility_a": "Trung tâm nhận học sinh từ Band 5.0 đến Band 6.5, được tư vấn trực tiếp để xếp lớp phù hợp với năng lực hiện tại.",
-        "teacher_bio": "Thầy hiện là nghiên cứu sinh tiến sĩ tại AIT Thái Lan (Asian Institute of Technology) và là giảng viên Đại học Kinh tế TP.HCM (UEH) từ năm 2016, với phương pháp giảng dạy tiên tiến.",
+        "teacher_bio": "Thầy hiện là nghiên cứu sinh tiến sĩ tại Học viện Công nghệ Châu Á AIT (Thái Lan). Thầy từng giảng dạy tại Đại học Khoa học Ứng dụng NHL Stenden (Hà Lan), đồng thời là giảng viên tại Đại học Kinh tế TP.HCM và Trường Đại học Khoa học Xã hội và Nhân văn. Với nền tảng học thuật quốc tế, thầy đưa phương pháp giảng dạy tiên tiến, kết hợp kinh nghiệm thực tiễn từ môi trường giáo dục trong và ngoài nước đến với học sinh của trung tâm.",
         "subject_image": "",
     },
 }
@@ -392,7 +392,7 @@ about_body = f"""  <main class="max-w-4xl mx-auto px-4 py-10">
       <h2 class="text-xl font-bold text-[--color-primary]">Tiểu sử</h2>
       <ul class="mt-3 text-gray-600 space-y-1 text-sm list-disc list-inside">
         <li>Nhiều năm kinh nghiệm dạy luyện thi Đại học</li>
-        <li>Giáo viên dạy luyện thi đại học tại Đại học Bách Khoa (1993), Đại học Kinh tế (1994), Cadasa (1991), Trung tâm Tân Lê Hồng Phong, Đài truyền hình HTV4 (2008) và Trường BDVH 218 Lý Tự Trọng</li>
+        <li>Giáo viên dạy luyện thi đại học tại  các trung tâm của Đại học Bách Khoa & Đại học Kinh tế TP.HCM, Trung tâm Tân Lê Hồng Phong, chương trình luyện thi đại học của Đài truyền hình HTV4 và Trường BDVH 218 Lý Tự Trọng</li>
         <li>Tác giả của hơn 40 bộ sách được xuất bản trên quy mô cả nước</li>
         <li>Triết lý giảng dạy: mỗi học sinh một lộ trình riêng, không rập khuôn. Thầy đồng hành sát sao cùng học sinh trên từng chặng đường, từ nền tảng đến khi vững vàng chinh phục mục tiêu đại học</li>
       </ul>
@@ -401,7 +401,8 @@ about_body = f"""  <main class="max-w-4xl mx-auto px-4 py-10">
     <div class="mt-8">
       <h2 class="text-xl font-bold text-[--color-primary]">Tài liệu / Ấn phẩm tiêu biểu</h2>
       <p class="mt-2 text-sm text-gray-600">Thầy là tác giả của hơn 40 bộ sách được xuất bản trên quy mô cả nước.</p>
-      <div class="mt-3 grid sm:grid-cols-3 gap-4 text-sm">
+      <div class="mt-3 grid sm:grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+        <img src="/assets/images/sach-vatly-11.jpg" alt="Sách Phân loại và phương pháp giải bài tập Vật Lí 11, tác giả Lê Văn Thông" class="rounded-xl w-full h-auto object-cover">
         <img src="/assets/images/sach-vatly-01.jpg" alt="Sách Tuyển tập các bài toán Vật Lý - Luyện thi đại học, tác giả Lê Văn Thông" class="rounded-xl w-full h-auto object-cover">
         <img src="/assets/images/sach-vatly-02.jpg" alt="Sách Phân loại và phương pháp giải bài tập Vật Lí 10, tác giả Lê Văn Thông" class="rounded-xl w-full h-auto object-cover">
         <img src="/assets/images/sach-vatly-03.jpg" alt="Sách Tuyển chọn những bài toán trong các đề thi đại học & cao đẳng Vật Lý 12, tác giả Lê Văn Thông" class="rounded-xl w-full h-auto object-cover">
