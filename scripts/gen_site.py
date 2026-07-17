@@ -43,6 +43,7 @@ NAV_ITEMS = [
     ("/programs/vatly.html", "Vật lý"),
     ("/programs/anhvan.html", "Anh văn"),
     ("/programs/ielts.html", "IELTS"),
+    ("/results.html", "Gương sáng"),
     ("/about.html", "Thầy Lê Văn Thông"),
     ("/contact.html", "Liên hệ"),
 ]
@@ -91,6 +92,7 @@ def footer():
         <ul class="space-y-1">
           <li><a href="/about.html" class="hover:text-[--color-accent]">Thầy Lê Văn Thông</a></li>
           <li><a href="/method.html" class="hover:text-[--color-accent]">Phương pháp học</a></li>
+          <li><a href="/results.html" class="hover:text-[--color-accent]">Gương sáng</a></li>
           <li><a href="/public-info.html" class="hover:text-[--color-accent]">Thông tin công khai</a></li>
         </ul>
       </div>
@@ -155,7 +157,7 @@ def write(path, content):
 index_body = f"""  <main>
     <section class="bg-gradient-to-b from-[--color-primary] to-[#002a57] text-white">
       <div class="max-w-6xl mx-auto px-4 py-14 sm:py-20 text-center">
-        <h1 class="text-3xl sm:text-5xl font-bold leading-tight">Vững vàng luyện thi đại học đánh giá năng lực<br class="hidden sm:block"> cùng nền tảng Toán – Lý – Anh và IELTS từ lớp 6 - 12</h1>
+        <h1 class="text-3xl sm:text-5xl font-bold leading-tight">Vững vàng luyện thi đại học và đánh giá năng lực<br class="hidden sm:block"> cùng nền tảng Toán – Lý – Anh và IELTS từ lớp 6 - 12</h1>
         <p class="mt-2 text-[--color-accent] font-semibold">Học cùng đội ngũ giảng dạy dẫn dắt bởi Thầy Lê Văn Thông</p>
         <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
           <a href="{ZALO_LINK}" target="_blank" rel="noopener" class="bg-[--color-accent] text-[--color-primary] font-bold px-6 py-3 rounded-full">Tư vấn qua Zalo</a>
@@ -315,10 +317,10 @@ SUBJECTS = {
             "Lớp 12": "Ôn thi THPT: luyện đề, chiến lược làm bài trắc nghiệm",
         },
         "audience": "Học sinh lớp 6 đến lớp 12",
-        "instructor": "Thầy Lê Văn Thông và đội ngũ giảng dạy",
+        "instructor": "Thầy Lê Văn Thông, thầy Lê Hồng Trân và đội ngũ giảng dạy",
         "eligibility_q": "Học sinh lớp nào có thể đăng ký?",
         "eligibility_a": "Trung tâm nhận học sinh từ lớp 6 đến lớp 12, xếp lớp theo năng lực thực tế.",
-        "teacher_bio": "",
+        "teacher_bio": "Thầy Lê Hồng Trân hiện là nghiên cứu sinh tiến sĩ tại Học viện Công nghệ Châu Á AIT (Thái Lan). Thầy từng giảng dạy tại Đại học Khoa học Ứng dụng NHL Stenden (Hà Lan), đồng thời là giảng viên tại Đại học Kinh tế TP.HCM và Trường Đại học Khoa học Xã hội và Nhân văn. Với nền tảng học thuật quốc tế, thầy đưa phương pháp giảng dạy tiên tiến, kết hợp kinh nghiệm thực tiễn từ môi trường giáo dục trong và ngoài nước đến với học sinh của trung tâm.",
         "subject_image": '<img src="/assets/images/student-english-study.jpg" alt="Học sinh học Anh văn tại trung tâm" class="rounded-xl mt-6 w-full h-auto object-cover aspect-video">',
     },
     "ielts": {
@@ -525,10 +527,27 @@ assessment_body = f"""  <main class="max-w-2xl mx-auto px-4 py-10">
 """
 write("assessment.html", page("Tư vấn miễn phí | " + CENTER_NAME, "Đăng ký tư vấn lộ trình miễn phí cho khóa Toán, Vật lý, Tiếng Anh tại LêVănThông Education, không cần làm bài kiểm tra đầu vào.", "/assessment.html", assessment_body))
 
-# ---------- results.html ----------
-results_body = """  <main class="max-w-5xl mx-auto px-4 py-10">
-    <h1 class="text-3xl font-bold text-[--color-primary] text-center">Kết quả học sinh</h1>
-    <div class="mt-6 grid sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
+# ---------- results.html (Gương sáng) ----------
+results_body = f"""  <main class="max-w-5xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-bold text-[--color-primary] text-center">Gương sáng</h1>
+    <p class="mt-3 text-gray-600 text-center">Những học sinh đã trưởng thành từ lớp học của Thầy.</p>
+
+    <div class="mt-8 border rounded-xl overflow-hidden sm:grid sm:grid-cols-2">
+      <img src="/assets/images/guong-sang-phan-hai-anh.jpg" alt="Thầy Lê Văn Thông cùng học sinh Phan Hải Anh" class="w-full h-full object-cover">
+      <div class="p-6">
+        <h2 class="text-xl font-bold text-[--color-primary]">Phan Hải Anh</h2>
+        <p class="mt-3 text-gray-600 text-sm">Chúc mừng em Phan Hải Anh đã xuất sắc được tuyển thẳng vào cả hai trường đại học năm 2026:</p>
+        <ul class="mt-2 text-gray-600 text-sm list-disc list-inside space-y-1">
+          <li>Học viện Ngoại giao</li>
+          <li>Trường Đại học Khoa học Xã hội và Nhân văn</li>
+        </ul>
+        <p class="mt-3 text-gray-600 text-sm">Mới ngày nào em còn là cậu học trò nhỏ, bỡ ngỡ bước vào lớp dạy kèm của thầy từ năm lớp 9 học liên tục đến lớp 12. Hôm nay, bằng sự chăm chỉ, nỗ lực và quyết tâm, em đã gặt hái được thành quả thật đáng tự hào.</p>
+        <p class="mt-3 text-gray-600 text-sm">Niềm vui này không chỉ của riêng em mà còn là niềm hạnh phúc của gia đình, thầy cô và những người luôn dõi theo em.</p>
+        <p class="mt-3 text-gray-600 text-sm">Chúc em vững bước trên chặng đường đại học, tiếp tục nuôi dưỡng ước mơ, gặt hái nhiều thành công và trở thành phiên bản tốt đẹp nhất của chính mình.</p>
+      </div>
+    </div>
+
+    <div class="mt-12 grid sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
       <div class="border rounded-xl p-4"><p class="text-2xl font-bold text-[--color-primary]">[ % ]</p><p class="text-xs text-gray-600 mt-1">Học sinh cải thiện điểm số</p></div>
       <div class="border rounded-xl p-4"><p class="text-2xl font-bold text-[--color-primary]">[ N ]</p><p class="text-xs text-gray-600 mt-1">Học sinh đã theo học</p></div>
       <div class="border rounded-xl p-4"><p class="text-2xl font-bold text-[--color-primary]">[ N ]</p><p class="text-xs text-gray-600 mt-1">Năm hoạt động</p></div>
@@ -548,14 +567,14 @@ results_body = """  <main class="max-w-5xl mx-auto px-4 py-10">
     ("Không chỉ ôn kiến thức, Thầy còn giúp em xây dựng lộ trình rõ ràng để từng bước vươn tới mục tiêu đại học.", "Học sinh lớp 11"),
     ("Sự tận tâm và kiên nhẫn của Thầy là điều khiến gia đình tôi luôn yên tâm gửi gắm con trong suốt nhiều năm.", "Phụ huynh học sinh"),
     ("Em biết ơn Thầy vì đã đồng hành cùng em không chỉ trong học tập mà cả những lúc em mất phương hướng với mục tiêu của mình.", "Cựu học sinh"),
-]) + """
+]) + f"""
     </div>
     <div class="mt-10 text-center">
-      <a href="/assessment.html" class="inline-block bg-[--color-accent] text-[--color-primary] font-bold px-8 py-3 rounded-full">Trở thành học sinh tiếp theo</a>
+      <a href="{ZALO_LINK}" target="_blank" rel="noopener" class="inline-block bg-[--color-accent] text-[--color-primary] font-bold px-8 py-3 rounded-full">Tư vấn qua Zalo</a>
     </div>
   </main>
 """
-write("results.html", page("Kết quả học sinh | " + CENTER_NAME, "Kết quả và cảm nhận của học sinh đã theo học tại trung tâm Thầy Lê Văn Thông.", "/results.html", results_body))
+write("results.html", page("Gương sáng | " + CENTER_NAME, "Những học sinh đã trưởng thành từ lớp học của Thầy Lê Văn Thông, cùng kết quả và cảm nhận từ học sinh, phụ huynh.", "/results.html", results_body))
 
 # ---------- public-info.html ----------
 public_info_body = f"""  <main class="max-w-3xl mx-auto px-4 py-10">
