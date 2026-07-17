@@ -25,6 +25,10 @@ GA4_CODE = f"""<!-- Google tag (gtag.js) -->
   gtag('js', new Date());
   gtag('config', '{GA4_MEASUREMENT_ID}');
 </script>"""
+CLOUDFLARE_ANALYTICS_TOKEN = "83983b7d6b6b4ba7a9c160330a84e206"
+CLOUDFLARE_ANALYTICS_CODE = f"""<!-- Cloudflare Web Analytics -->
+<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "{CLOUDFLARE_ANALYTICS_TOKEN}"}}'></script>
+<!-- End Cloudflare Web Analytics -->"""
 FACEBOOK_PIXEL_ID = "1699836964558657"
 FACEBOOK_PIXEL_CODE = f"""<!-- Facebook Pixel Code -->
 <script>!function(f,b,e,v,n,t,s){{if(f.fbq)return;n=f.fbq=function(){{n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)}};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
@@ -146,6 +150,7 @@ def page(title, description, current, body, asset_prefix="", extra_head=""):
   {extra_head}
   {GA4_CODE}
   {FACEBOOK_PIXEL_CODE}
+  {CLOUDFLARE_ANALYTICS_CODE}
 </head>
 <body class="bg-white text-gray-800 pb-16 sm:pb-0">
 {header(current)}
