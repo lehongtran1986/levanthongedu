@@ -158,7 +158,7 @@ index_body = f"""  <main>
         <h1 class="text-3xl sm:text-5xl font-bold leading-tight">Vững vàng luyện thi đại học đánh giá năng lực<br class="hidden sm:block"> cùng nền tảng Toán – Lý – Anh và IELTS từ lớp 6 - 12</h1>
         <p class="mt-2 text-[--color-accent] font-semibold">Học cùng đội ngũ giảng dạy dẫn dắt bởi Thầy Lê Văn Thông</p>
         <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-          <a href="/assessment.html" class="bg-[--color-accent] text-[--color-primary] font-bold px-6 py-3 rounded-full">Tư vấn miễn phí</a>
+          <a href="{ZALO_LINK}" target="_blank" rel="noopener" class="bg-[--color-accent] text-[--color-primary] font-bold px-6 py-3 rounded-full">Tư vấn qua Zalo</a>
           <a href="/method.html" class="bg-white/10 border border-white/40 text-white font-semibold px-6 py-3 rounded-full">Nhận lộ trình cá nhân hóa</a>
         </div>
       </div>
@@ -237,9 +237,9 @@ index_body = f"""  <main>
     <section id="assessment-form" class="bg-[--color-primary] text-white">
       <div class="max-w-2xl mx-auto px-4 py-12">
         <h2 class="text-2xl font-bold text-center">Tư vấn miễn phí</h2>
-        <p class="text-center text-white/80 mt-2">Không cần làm bài kiểm tra đầu vào — điền thông tin, đội ngũ trung tâm sẽ liên hệ trong 15 phút.</p>
+        <p class="text-center text-white/80 mt-2">Không cần làm bài kiểm tra đầu vào — nhắn Zalo, đội ngũ trung tâm sẽ tư vấn ngay.</p>
         <div class="mt-6 text-center">
-          <a href="/assessment.html" class="inline-block bg-[--color-accent] text-[--color-primary] font-bold px-8 py-4 rounded-full text-lg shadow-lg hover:scale-105 transition-transform">Đăng ký nhận tư vấn</a>
+          <a href="{ZALO_LINK}" target="_blank" rel="noopener" class="inline-block bg-[--color-accent] text-[--color-primary] font-bold px-8 py-4 rounded-full text-lg shadow-lg hover:scale-105 transition-transform">Tư vấn qua Zalo</a>
         </div>
       </div>
     </section>
@@ -369,7 +369,7 @@ def subject_page(slug):
     </div>
 
     <div class="mt-10 text-center">
-      <a href="/assessment.html" class="inline-block bg-[--color-accent] text-[--color-primary] font-bold px-8 py-3 rounded-full">Tư vấn miễn phí</a>
+      <a href="{ZALO_LINK}" target="_blank" rel="noopener" class="inline-block bg-[--color-accent] text-[--color-primary] font-bold px-8 py-3 rounded-full">Tư vấn qua Zalo</a>
     </div>
 
     <div class="mt-10">
@@ -428,7 +428,7 @@ about_body = f"""  <main class="max-w-4xl mx-auto px-4 py-10">
     </div>
 
     <div class="mt-10 text-center">
-      <a href="/assessment.html" class="inline-block bg-[--color-accent] text-[--color-primary] font-bold px-8 py-3 rounded-full">Tư vấn miễn phí</a>
+      <a href="{ZALO_LINK}" target="_blank" rel="noopener" class="inline-block bg-[--color-accent] text-[--color-primary] font-bold px-8 py-3 rounded-full">Tư vấn qua Zalo</a>
     </div>
   </main>
 """
@@ -588,7 +588,7 @@ contact_body = f"""  <main class="max-w-4xl mx-auto px-4 py-10">
       </div>
     </div>
     <div class="mt-10 text-center">
-      <a href="/assessment.html" class="inline-block bg-[--color-accent] text-[--color-primary] font-bold px-8 py-3 rounded-full">Tư vấn miễn phí</a>
+      <a href="{ZALO_LINK}" target="_blank" rel="noopener" class="inline-block bg-[--color-accent] text-[--color-primary] font-bold px-8 py-3 rounded-full">Tư vấn qua Zalo</a>
     </div>
   </main>
 """
